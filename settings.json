@@ -35,6 +35,36 @@
                 "endpoint": "colrev_built_in.bibtex"
             },
             "comment": ""
+        },
+        {
+            "endpoint": "colrev_built_in.local_index",
+            "filename": "data/search/md_curated.bib",
+            "search_type": "OTHER",
+            "search_parameters": {},
+            "load_conversion_package_endpoint": {
+                "endpoint": "colrev_built_in.bibtex"
+            },
+            "comment": ""
+        },
+        {
+            "endpoint": "colrev_built_in.dblp",
+            "filename": "data/search/md_dblp.bib",
+            "search_type": "OTHER",
+            "search_parameters": {},
+            "load_conversion_package_endpoint": {
+                "endpoint": "colrev_built_in.bibtex"
+            },
+            "comment": ""
+        },
+        {
+            "endpoint": "colrev_built_in.crossref",
+            "filename": "data/search/md_crossref.bib",
+            "search_type": "OTHER",
+            "search_parameters": {},
+            "load_conversion_package_endpoint": {
+                "endpoint": "colrev_built_in.bibtex"
+            },
+            "comment": ""
         }
     ],
     "search": {
