@@ -142,10 +142,7 @@
         "same_source_merges": "prevent",
         "dedupe_package_endpoints": [
             {
-                "endpoint": "colrev_built_in.active_learning_training"
-            },
-            {
-                "endpoint": "colrev_built_in.active_learning_automated"
+                "endpoint": "colrev_built_in.simple_dedupe"
             }
         ]
     },
