@@ -205,6 +205,8 @@
         "screen_package_endpoints": []
     },
     "data": {
-        "data_package_endpoints": []
+        "data_package_endpoints": [
+            {"endpoint": "colrev_built_in.github_pages"}
+        ]
     }
 }
