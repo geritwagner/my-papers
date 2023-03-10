@@ -12,11 +12,10 @@ jobs:
       - name: Checkout this repository
         uses: actions/checkout@v2
       - run: |
-          pip install git+https://github.com/CoLRev-Ecosystem/colrev.git#egg=colrev
+          pip install colrev
           git config user.name "CoLRev update"
           git config user.email "actions@users.noreply.github.com"
       - run: |
-          colrev search -s data/search/CROSSREF.bib
           colrev search -s data/search/md_curated.bib
           colrev search -s data/search/md_crossref.bib
       - name: Push if it changed
