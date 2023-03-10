@@ -5,6 +5,8 @@ on:
   schedule:
     - cron: '10 2 * * *'
 
+# Note : requires github/settings/actions/general/workflow permissions/read and write
+
 jobs:
   update:
     runs-on: ubuntu-latest
