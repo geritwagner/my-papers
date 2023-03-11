@@ -21,7 +21,9 @@ jobs:
           git config --global url.https://github.com/.insteadOf git://github.com/
           colrev search -s data/search/md_curated.bib
           colrev search -s data/search/md_crossref.bib
+          git push
       - name: pull-request
         uses: repo-sync/pull-request@v2
         with:
           destination_branch: "main"
+          branch: update-dependencies
