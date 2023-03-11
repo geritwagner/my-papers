@@ -27,4 +27,6 @@ jobs:
       - name: pull-request
         uses: repo-sync/pull-request@v2
         with:
+          source_branch: "colrev-update"
           destination_branch: "main"
+          pr_title: "Pulling ${{ github.ref }} into master"
