@@ -18,6 +18,7 @@ jobs:
       - run: |
           git config user.name "CoLRev update"
           git config user.email "actions@users.noreply.github.com"
+          git config --global url.https://github.com/.insteadOf git://github.com/
           colrev search -s data/search/md_curated.bib
           colrev search -s data/search/md_crossref.bib
       - name: Push if it changed
