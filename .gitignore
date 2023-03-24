@@ -1,15 +1,12 @@
 *.bib.sav
-data.csv
 venv
 .records_learned_settings
 .corrections
 .ipynb_checkpoints/
 .report.log
-requests_cache.sqlite
 __pycache__
 output
 data/pdfs
 data/pdf_get_man/missing_pdf_files.csv
 data/.tei/
 data/prep_man/records_prep_man.bib
-data/.tei
