@@ -19,7 +19,7 @@
         "id_pattern": "three_authors_year",
         "share_stat_req": "processed",
         "delay_automated_processing": true,
-        "colrev_version": "0.8.1",
+        "colrev_version": "0.8.2",
         "auto_upgrade": true
     },
     "sources": [
@@ -208,7 +208,9 @@
     "data": {
         "data_package_endpoints": [
             {
-                "endpoint": "colrev.github_pages"
+                "endpoint": "colrev.github_pages",
+                "version": "0.1",
+                "auto_push": true
             }
         ]
     }
