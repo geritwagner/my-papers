@@ -19,7 +19,7 @@
         "id_pattern": "three_authors_year",
         "share_stat_req": "processed",
         "delay_automated_processing": true,
-        "colrev_version": "0.8.3",
+        "colrev_version": "0.8.4",
         "auto_upgrade": true
     },
     "sources": [
@@ -107,9 +107,6 @@
                         "endpoint": "colrev.remove_broken_ids"
                     },
                     {
-                        "endpoint": "colrev.global_ids_consistency_check"
-                    },
-                    {
                         "endpoint": "colrev.get_doi_from_urls"
                     },
                     {
@@ -137,6 +134,9 @@
             {
                 "endpoint": "colrev.export_man_prep"
             }
+        ],
+        "defects_to_ignore": [
+            "inconsistent-with-url-metadata"
         ]
     },
     "dedupe": {
