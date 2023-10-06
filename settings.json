@@ -19,52 +19,40 @@
         "id_pattern": "three_authors_year",
         "share_stat_req": "processed",
         "delay_automated_processing": true,
-        "colrev_version": "0.8.4",
+        "colrev_version": "0.10.1",
         "auto_upgrade": true
     },
     "sources": [
         {
-            "endpoint": "colrev.pdfs_dir",
+            "endpoint": "colrev.files_dir",
             "filename": "data/search/pdfs.bib",
-            "search_type": "PDFS",
+            "search_type": "FILES",
             "search_parameters": {
                 "scope": {
                     "path": "data/pdfs"
                 }
-            },
-            "load_conversion_package_endpoint": {
-                "endpoint": "colrev.bibtex"
             },
             "comment": ""
         },
         {
             "endpoint": "colrev.local_index",
             "filename": "data/search/md_curated.bib",
-            "search_type": "OTHER",
+            "search_type": "MD",
             "search_parameters": {},
-            "load_conversion_package_endpoint": {
-                "endpoint": "colrev.bibtex"
-            },
             "comment": ""
         },
         {
             "endpoint": "colrev.dblp",
             "filename": "data/search/md_dblp.bib",
-            "search_type": "OTHER",
+            "search_type": "MD",
             "search_parameters": {},
-            "load_conversion_package_endpoint": {
-                "endpoint": "colrev.bibtex"
-            },
             "comment": ""
         },
         {
             "endpoint": "colrev.crossref",
             "filename": "data/search/md_crossref.bib",
-            "search_type": "OTHER",
+            "search_type": "MD",
             "search_parameters": {},
-            "load_conversion_package_endpoint": {
-                "endpoint": "colrev.bibtex"
-            },
             "comment": ""
         }
     ],
@@ -95,7 +83,7 @@
                         "endpoint": "colrev.exclude_complementary_materials"
                     },
                     {
-                        "endpoint": "colrev.get_masterdata_from_local_index"
+                        "endpoint": "colrev.local_index"
                     },
                     {
                         "endpoint": "colrev.exclude_languages"
@@ -113,19 +101,19 @@
                         "endpoint": "colrev.get_year_from_vol_iss_jour"
                     },
                     {
-                        "endpoint": "colrev.get_masterdata_from_crossref"
+                        "endpoint": "colrev.crossref"
                     },
                     {
-                        "endpoint": "colrev.get_masterdata_from_pubmed"
+                        "endpoint": "colrev.pubmed"
                     },
                     {
-                        "endpoint": "colrev.get_masterdata_from_europe_pmc"
+                        "endpoint": "colrev.europe_pmc"
                     },
                     {
-                        "endpoint": "colrev.get_masterdata_from_dblp"
+                        "endpoint": "colrev.dblp"
                     },
                     {
-                        "endpoint": "colrev.get_masterdata_from_open_library"
+                        "endpoint": "colrev.open_library"
                     }
                 ]
             }
