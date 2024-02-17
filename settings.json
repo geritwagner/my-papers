@@ -19,7 +19,7 @@
         "id_pattern": "three_authors_year",
         "share_stat_req": "processed",
         "delay_automated_processing": true,
-        "colrev_version": "0.10.4",
+        "colrev_version": "0.11.0",
         "auto_upgrade": true
     },
     "sources": [
@@ -125,7 +125,6 @@
         ]
     },
     "dedupe": {
-        "same_source_merges": "prevent",
         "dedupe_package_endpoints": [
             {
                 "endpoint": "colrev.simple_dedupe"
@@ -155,7 +154,8 @@
             {
                 "endpoint": "colrev.colrev_cli_pdf_get_man"
             }
-        ]
+        ],
+        "defects_to_ignore": []
     },
     "pdf_prep": {
         "keep_backup_of_pdfs": true,
@@ -179,13 +179,16 @@
                 "endpoint": "colrev.grobid_tei"
             },
             {
+                "endpoint": "colrev.ocrmypdf"
+            },
+            {
+                "endpoint": "colrev.grobid_tei"
+            },
+            {
                 "endpoint": "colrev.remove_coverpage"
             },
             {
                 "endpoint": "colrev.remove_last_page"
-            },
-            {
-                "endpoint": "colrev.create_tei"
             }
         ],
         "pdf_prep_man_package_endpoints": [
