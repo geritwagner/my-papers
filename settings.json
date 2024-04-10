@@ -59,7 +59,6 @@
     "search": {
         "retrieve_forthcoming": true
     },
-    "load": {},
     "prep": {
         "fields_to_keep": [],
         "prep_rounds": [
