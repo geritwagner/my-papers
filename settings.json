@@ -19,43 +19,10 @@
         "id_pattern": "three_authors_year",
         "share_stat_req": "processed",
         "delay_automated_processing": true,
-        "colrev_version": "0.12.0",
+        "colrev_version": "0.15.0",
         "auto_upgrade": true
     },
-    "sources": [
-        {
-            "endpoint": "colrev.files_dir",
-            "filename": "data/search/pdfs.bib",
-            "search_type": "FILES",
-            "search_parameters": {
-                "scope": {
-                    "path": "data/pdfs"
-                }
-            },
-            "comment": ""
-        },
-        {
-            "endpoint": "colrev.local_index",
-            "filename": "data/search/md_curated.bib",
-            "search_type": "MD",
-            "search_parameters": {},
-            "comment": ""
-        },
-        {
-            "endpoint": "colrev.dblp",
-            "filename": "data/search/md_dblp.bib",
-            "search_type": "MD",
-            "search_parameters": {},
-            "comment": ""
-        },
-        {
-            "endpoint": "colrev.crossref",
-            "filename": "data/search/md_crossref.bib",
-            "search_type": "MD",
-            "search_parameters": {},
-            "comment": ""
-        }
-    ],
+    "sources": [],
     "search": {
         "retrieve_forthcoming": true
     },
@@ -119,9 +86,7 @@
                 "endpoint": "colrev.export_man_prep"
             }
         ],
-        "defects_to_ignore": [
-            "inconsistent-with-url-metadata"
-        ]
+        "defects_to_ignore": []
     },
     "dedupe": {
         "dedupe_package_endpoints": [
@@ -207,6 +172,9 @@
                 "endpoint": "colrev.github_pages",
                 "version": "0.1",
                 "auto_push": true
+            },
+            {
+                "endpoint": "colrev.ref_check"
             }
         ]
     }
