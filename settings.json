@@ -91,7 +91,7 @@
     "dedupe": {
         "dedupe_package_endpoints": [
             {
-                "endpoint": "colrev.simple_dedupe"
+                "endpoint": "colrev.dedupe"
             }
         ]
     },
